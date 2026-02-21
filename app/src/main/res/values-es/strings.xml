@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DND Toggle</string>
+    <string name="tile_label">DND Toggle</string>
+
+    <string name="goto_system_settings">Abrir configuración del sistema</string>
+
+    <string name="dnd_permission_unknown">DND: Permisos desconocidos 🔎"</string>
+    <string name="dnd_permission_granted">DND: Permisos autorizados ✅"</string>
+    <string name="dnd_permission_not_granted">DND: Permisos no autorizados ❌</string>
+
+    <string name="dnd_permission">DND: Sin permiso</string>
+    <string name="dnd_off">DND: Apagado</string>
+    <string name="dnd_priority">DND: Prioridad</string>
+    <string name="dnd_alarms">DND: Alarmas</string>
+    <string name="dnd_none">DND: Ninguno</string>
+    <string name="dnd_unknown">DND: Desconocido</string>
+</resources>
