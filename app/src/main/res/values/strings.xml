@@ -14,4 +14,10 @@
     <string name="dnd_alarms">DND: Alarms</string>
     <string name="dnd_none">DND: None</string>
     <string name="dnd_unknown">DND: Unknown</string>
+
+    <string name="enable_states_in_cycle">Enable states in cycle</string>
+    <string name="priority_only">Priority Only</string>
+    <string name="alarms_only">Alarms Only</string>
+    <string name="total_silence">Total Silence</string>
+
 </resources>
