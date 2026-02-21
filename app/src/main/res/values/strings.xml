@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">Dnd Toggle</string>
+    <string name="app_name">DND Toggle</string>
     <string name="tile_label">DND Toggle</string>
+
+    <string name="goto_system_settings">Go to System Settings</string>
+
+    <string name="dnd_permission_unknown">DND Permissions: Unknown 🔎"</string>
+    <string name="dnd_permission_granted">DND Permissions: Granted ✅"</string>
+    <string name="dnd_permission_not_granted">DND Permissions: Not Granted ❌</string>
+
+    <string name="dnd_permission">DND: Permission</string>
+    <string name="dnd_off">DND: Off</string>
+    <string name="dnd_priority">DND: Priority</string>
+    <string name="dnd_alarms">DND: Alarms</string>
+    <string name="dnd_none">DND: None</string>
+    <string name="dnd_unknown">DND: Unknown</string>
 </resources>

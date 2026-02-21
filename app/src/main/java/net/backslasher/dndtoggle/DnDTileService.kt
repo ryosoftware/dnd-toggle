@@ -47,7 +47,7 @@ class DnDTileService : TileService() {
         val tile = qsTile
         if (!notificationManager.isNotificationPolicyAccessGranted) {
             tile.state = Tile.STATE_UNAVAILABLE
-            tile.label = "dnd: permission"
+            tile.label = getString(R.string.dnd_permission);
             tile.icon = Icon.createWithResource(this, R.drawable.ic_dnd_off)
             tile.updateTile()
             return
@@ -56,27 +56,27 @@ class DnDTileService : TileService() {
         when (notificationManager.currentInterruptionFilter) {
             NotificationManager.INTERRUPTION_FILTER_ALL -> {
                 tile.state = Tile.STATE_INACTIVE
-                tile.label = "dnd: off"
+                tile.label = getString(R.string.dnd_off);
                 tile.icon = Icon.createWithResource(this, R.drawable.ic_dnd_off)
             }
             NotificationManager.INTERRUPTION_FILTER_PRIORITY -> {
                 tile.state = Tile.STATE_ACTIVE
-                tile.label = "dnd: priority"
+                tile.label = getString(R.string.dnd_priority);
                 tile.icon = Icon.createWithResource(this, R.drawable.ic_dnd_on)
             }
             NotificationManager.INTERRUPTION_FILTER_ALARMS -> {
                 tile.state = Tile.STATE_ACTIVE
-                tile.label = "dnd: alarms"
+                tile.label = getString(R.string.dnd_alarms);
                 tile.icon = Icon.createWithResource(this, R.drawable.ic_dnd_on)
             }
             NotificationManager.INTERRUPTION_FILTER_NONE -> {
                 tile.state = Tile.STATE_ACTIVE
-                tile.label = "dnd: none"
+                tile.label = getString(R.string.dnd_none);
                 tile.icon = Icon.createWithResource(this, R.drawable.ic_dnd_on)
             }
             NotificationManager.INTERRUPTION_FILTER_UNKNOWN -> {
                 tile.state = Tile.STATE_UNAVAILABLE
-                tile.label = "dnd: unknown"
+                tile.label = getString(R.string.dnd_off);
                 tile.icon = Icon.createWithResource(this, R.drawable.ic_dnd_off)
             }
         }

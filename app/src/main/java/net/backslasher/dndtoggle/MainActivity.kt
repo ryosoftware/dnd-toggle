@@ -41,9 +41,9 @@ class MainActivity : AppCompatActivity() {
     private fun updateUi() {
         val permissionStatusText = findViewById<TextView>(R.id.permission_status_text)
         if (notificationManager.isNotificationPolicyAccessGranted) {
-            permissionStatusText.text = "DND Permissions: Granted ✅"
+            permissionStatusText.text = getString(R.string.dnd_permission_granted);
         } else {
-            permissionStatusText.text = "DND Permissions: Not Granted ❌"
+            permissionStatusText.text = getString(R.string.dnd_permission_not_granted);
         }
     }
 }
